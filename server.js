@@ -18,7 +18,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/archive1', function (req, res) {
-  res.send('Archive mode will be displayed here');
+  res.sendFile(path.join(__dirname, 'ui', 'archive1.html'));
 });
 
 // Do not change port, otherwise your app won't run on IMAD servers
